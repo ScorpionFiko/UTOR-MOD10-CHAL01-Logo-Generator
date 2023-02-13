@@ -80,20 +80,20 @@ describe('Circle Class Tests', () => {
     });
     describe('Testing render function', () => {
         test('testing function without styling', () => {
-            const result = `<circle r=100 style="" />`;
+            const result = `<circle r="100" style="" />`;
             const circle = new Circle(200);
             expect(circle.render()).toBe(result);
 
         });
         test('testing function with passing fill colour', () => {
-            const result = `<circle r=100 style="fill:rgb(255,0,12);" />`;
+            const result = `<circle r="100" style="fill:rgb(255,0,12);" />`;
             const circle = new Circle(200);
             circle.addStyle({'fill': 'rgb(255,0,12)'});
             expect(circle.render()).toBe(result);
 
         });
         test('testing function with passing more than one style', () => {
-            const result = `<circle r=30 style="fill:gray;stroke:#ffffff;stroke-width:3px;" />`;
+            const result = `<circle r="30" style="fill:gray;stroke:#ffffff;stroke-width:3px;" />`;
             const circle = new Circle(60);
             circle.addStyle({
                 'fill': "gray", 

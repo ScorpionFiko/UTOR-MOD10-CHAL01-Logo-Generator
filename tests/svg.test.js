@@ -74,7 +74,7 @@ describe('SVG class testing', () => {
                 expect(() => { new SVG({ logoText: logoText }) }).toThrow(result);
             });
             test('testing the shape with supplying the Square shape object', () => {
-                const result = `<rect x=-50 y=-50 width=100 height=100 style="" />`;
+                const result = `<rect x="-50" y="-50" width="100" height="100" style="" />`;
                 // must include a text class object
                 const logoText = new Text("Ba");
                 const logoShape = new Square(100);
@@ -82,7 +82,7 @@ describe('SVG class testing', () => {
                 expect(svgFile.logoShape).toBe(result);
             });
             test('testing the shape with supplying the Circle shape object', () => {
-                const result = `<circle r=25 style="" />`;
+                const result = `<circle r="25" style="" />`;
                 // must include a text class object
                 const logoText = new Text("Ba");
                 const logoShape = new Circle(50);
@@ -144,14 +144,14 @@ describe('SVG class testing', () => {
     });
     describe('render function testing', () => {
         test('rendering SVG without styles for the SVG, text, or shape', () => {
-            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="">\n<rect x=-100 y=-100 width=200 height=200 style="" />\n<text style="">aBc</text></svg>`;
+            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="">\n<rect x="-100" y="-100" width="200" height="200" style="" />\n<text style="">aBc</text></svg>`;
             const logoText = new Text('aBc');
             const logoShape = new Square(200);
             const svgFile = new SVG({ logoText: logoText, logoShape: logoShape });
             expect(svgFile.render()).toBe(result)
         });
         test('rendering SVG with styles for the SVG, but no style for the text, or shape', () => {
-            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<rect x=-100 y=-100 width=200 height=200 style="" />\n<text style="">aBc</text></svg>`;
+            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<rect x="-100" y="-100" width="200" height="200" style="" />\n<text style="">aBc</text></svg>`;
             const logoText = new Text('aBc');
             const logoShape = new Square(200);
             const svgFile = new SVG({ logoText: logoText, logoShape: logoShape });
@@ -159,7 +159,7 @@ describe('SVG class testing', () => {
             expect(svgFile.render()).toBe(result)
         });
         test('rendering SVG with styles for the the text, but no style for the SVG, or shape', () => {
-            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<circle r=49 style="" />\n<text style="fill:pink;">aBc</text></svg>`;
+            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<circle r="49" style="" />\n<text style="fill:pink;">aBc</text></svg>`;
             const logoText = new Text('aBc');
             logoText.addStyle({ 'fill': 'pink' })
             const logoShape = new Circle(98);
@@ -168,7 +168,7 @@ describe('SVG class testing', () => {
             expect(svgFile.render()).toBe(result)
         });
         test('rendering SVG with styles for the the shape, but no style for the SVG, or text', () => {
-            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<rect x=-100 y=-100 width=200 height=200 style="stroke:green;" />\n<text style="">aBc</text></svg>`;
+            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<rect x="-100" y="-100" width="200" height="200" style="stroke:green;" />\n<text style="">aBc</text></svg>`;
             const logoText = new Text('aBc');
             const logoShape = new Square(200);
             logoShape.addStyle({ 'stroke': 'green' })

@@ -94,20 +94,20 @@ describe('Square Class Tests', () => {
     });
     describe('Testing render function', () => {
         test('testing function without styling', () => {
-            const result = `<rect x=-50 y=-50 width=100 height=100 style="" />`;
+            const result = `<rect x="-50" y="-50" width="100" height="100" style="" />`;
             const square = new Square(100);
             expect(square.render()).toBe(result);
 
         });
         test('testing function with passing fill colour', () => {
-            const result = `<rect x=-50 y=-50 width=100 height=100 style="fill:rgb(255,0,12);" />`;
+            const result = `<rect x="-50" y="-50" width="100" height="100" style="fill:rgb(255,0,12);" />`;
             const square = new Square(100);
             square.addStyle({'fill': 'rgb(255,0,12)'});
             expect(square.render()).toBe(result);
 
         });
         test('testing function with passing more than one style', () => {
-            const result = `<rect x=-50 y=-50 width=100 height=100 style="fill:gray;stroke:#000000;stroke-width:3px;" />`;
+            const result = `<rect x="-50" y="-50" width="100" height="100" style="fill:gray;stroke:#000000;stroke-width:3px;" />`;
             const square = new Square(100);
             square.addStyle({
                 'fill': "gray", 
