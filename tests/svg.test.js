@@ -82,7 +82,7 @@ describe('SVG class testing', () => {
                 expect(svgFile.logoShape).toBe(result);
             });
             test('testing the shape with supplying the Circle shape object', () => {
-                const result = `<circle r=50 style="" />`;
+                const result = `<circle r=25 style="" />`;
                 // must include a text class object
                 const logoText = new Text("Ba");
                 const logoShape = new Circle(50);
@@ -159,7 +159,7 @@ describe('SVG class testing', () => {
             expect(svgFile.render()).toBe(result)
         });
         test('rendering SVG with styles for the the text, but no style for the SVG, or shape', () => {
-            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<circle r=98 style="" />\n<text style="fill:pink;">aBc</text></svg>`;
+            const result = `<svg viewBox="-150 -100 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">\n<circle r=49 style="" />\n<text style="fill:pink;">aBc</text></svg>`;
             const logoText = new Text('aBc');
             logoText.addStyle({ 'fill': 'pink' })
             const logoShape = new Circle(98);
