@@ -13,10 +13,10 @@ The origin is set as the middle point or centre of the image container. All shap
 The application utilizes several test suites for each class created and used in making the SVG. The command line interface (cli) class is not tested due to the user input.
 
 Below is the image of the application when the user enters input
-![City Weather Dashboard Landing](./assets/images/RG-01-input.png)
+![Command Line Interface](./assets/images/RG-01-input.png)
 
 Below is the image of the resulting svg file
-![City Weather Dashboard City Search](./assets/images/RG-02-readme.png)
+![SVG in browser](./assets/images/RG-02-readme.png)
 
 
 ## Table of Contents
@@ -55,7 +55,7 @@ The application writes to the following directory:
 
         /application_folder/examples/
 
-The svg files in the directory are gathered based on date created. That way the progression can be seen
+
 
 ### Command Line:
 
