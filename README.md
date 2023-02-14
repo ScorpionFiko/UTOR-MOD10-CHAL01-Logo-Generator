@@ -13,10 +13,10 @@ The origin is set as the middle point or centre of the image container. All shap
 The application utilizes several test suites for each class created and used in making the SVG. The command line interface (cli) class is not tested due to the user input.
 
 Below is the image of the application when the user enters input
-![Command Line Interface](./assets/images/RG-01-input.png)
+![Command Line Interface](./assets/images/SG-01-userinputs.png)
 
 Below is the image of the resulting svg file
-![SVG in browser](./assets/images/RG-02-readme.png)
+![SVG in browser](./assets/images/SG-02-image.png)
 
 
 ## Table of Contents
@@ -74,9 +74,9 @@ For accessing the application:<br>
         $ node index.js
 
 - provide information about the styling of the overall SVG container
-- provide information about the shape and its styling
 - provide information about the text and its styling 
-- go to application_folder/examples/logo-???.svg to view the files file
+- provide information about the shape and its styling
+- go to application_folder/examples/logo.svg to view the files file
 
 
 ## Credits
@@ -86,6 +86,7 @@ n/a
 
 A suite of six different tests has been created that handles the svg file creation class. These tests cover checking the functionality of each class constructor under different conditions (such as missing or bad input) and the operation of the class methods. The following screen shot provides summary of the test results.
 
+![Tests](./assets/images/SG-03-tests.png)
 
 ## License
 
@@ -100,7 +101,8 @@ Please go to ... to watch the walkthrough (and subscribe to my channel).
 ## Future Development
 
 Here are some of the items to be considered for future development.
-1. Add more than one shape
-2. Rotate shape based on the shape's axis
-3. Adding more shapes (ellipse, rectangle, isocelles)
+1. Add more than one shape to the overall image (2 squares, or 2 triangles)
+2. Rotate shape based on its axis
+3. Rotate text based on its axis
+4. Adding more types of shapes (ellipse, rectangle, different types of triangles)
 
