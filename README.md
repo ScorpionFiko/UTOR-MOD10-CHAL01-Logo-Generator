@@ -86,7 +86,7 @@ n/a
 
 A suite of six different tests has been created that handles the svg file creation class. These tests cover checking the functionality of each class constructor under different conditions (such as missing or bad input) and the operation of the class methods. The following screen shot provides summary of the test results.
 
-![Test Results](./assets/images/SG-03-tests.png)
+![Test Resultscleaqr](./assets/images/SG-03-tests.png)
 
 ## License
 
@@ -95,7 +95,8 @@ Please refer to the LICENSE in the repo.
 
 ## Walkthrough
 
-Please go to https://youtu.be/efHSQXRndjY to watch the walkthrough (and subscribe to my channel).
+- Application walkthrough: https://youtu.be/efHSQXRndjY 
+- Test walkthrough: https://youtu.be/5sePQ7l4qL0
 
 
 ## Future Development
