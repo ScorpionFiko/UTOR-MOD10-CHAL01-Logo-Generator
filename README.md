@@ -86,7 +86,7 @@ n/a
 
 A suite of six different tests has been created that handles the svg file creation class. These tests cover checking the functionality of each class constructor under different conditions (such as missing or bad input) and the operation of the class methods. The following screen shot provides summary of the test results.
 
-![Tests](./assets/images/SG-03-tests.png)
+![Test Results](./assets/images/SG-03-tests.png)
 
 ## License
 
@@ -95,7 +95,7 @@ Please refer to the LICENSE in the repo.
 
 ## Walkthrough
 
-Please go to ... to watch the walkthrough (and subscribe to my channel).
+Please go to https://youtu.be/efHSQXRndjY to watch the walkthrough (and subscribe to my channel).
 
 
 ## Future Development
@@ -105,4 +105,5 @@ Here are some of the items to be considered for future development.
 2. Rotate shape based on its axis
 3. Rotate text based on its axis
 4. Adding more types of shapes (ellipse, rectangle, different types of triangles)
+5. Let the user determine SVG size
 
