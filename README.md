@@ -96,7 +96,7 @@ Please refer to the LICENSE in the repo.
 ## Walkthrough
 
 - Application walkthrough: https://youtu.be/efHSQXRndjY 
-- Test walkthrough: https://youtu.be/5sePQ7l4qL0
+- Test walkthrough: https://youtu.be/PTdw8SiZ-aE
 
 
 ## Future Development
